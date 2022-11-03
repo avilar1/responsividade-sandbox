@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: aqua;
+    height: 80px;
+    margin-bottom: 10px;
+  width: 100%;
+  
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+header ul li {
+    display: inline-block;
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+main ul{
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+main ul li a{
+    text-decoration: none;
+}
+
+main ul li a:hover {
+    text-decoration: underline;
+}

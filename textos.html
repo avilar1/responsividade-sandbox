@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<he<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- meta name="viewport" content="width=375, initial-scale=1.0, minimum-scale=1.0 maximum-scale=1.0" -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.5">
+  <!-- meta name="viewport" content="initial-scale=1.0" -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-textos.css">
+  <title>Testes de texto</title>
+  </head>
+
+  <body class="corpo">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="imagens.html">imagens</a></li>
+          <li><a href="objetos.html">objetos</a></li>
+          <li><a href="blocos.html">blocos</a></li>
+          <li><a href="textos.html">textos</a></li>
+          <li><a href="outros.html">outros</a></li>
+        </ul>
+
+      </nav>
+    </header>
+    <main>
+    informações dispositivo atual quando a tela foi carregada:
+    <dt>Resolução do dispositivo:</dt>
+    <dd data-h="uno"></dd>
+    <dt>Width do viewport atual:</dt>
+    <dd data-h="dos"></dd>
+    <dt>Escala:</dt>
+    <dd data-h="tres"></dd>
+    </dl>
+    <div class="botao"><button id="ativado" onclick="libera()">Tira/bota barra de rolagem</button></div>
+
+    <div class="blocoUm" data-df="um">
+      <h2>Bloco Um</h2>
+      <h3 data-dh></h3>
+      <h4 data-hf="um">tamanho da fonte é: </h4>
+      <p>Aenean vitae congue tortor. Mauris maximus turpis vitae turpis imperdiet, nec dictum enim facilisis.
+        Mauris
+        quis ligula fermentum, semper diam vel, rhoncus enim. Suspendisse ac purus quis lorem sodales efficitur.
+        Sed
+        dictum hendrerit lorem, et dignissim neque consequat eu. Praesent vitae risus aliquet, finibus metus
+        vestibulum, viverra magna. Donec a condimentum mi, at tristique magna. Proin ornare ex sem, ac molestie
+        nunc
+        vulputate at. Donec pellentesque elit nec orci faucibus pretium. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Ut mollis neque quis pulvinar pharetra.</p>
+    </div>
+
+    <div class="pai">
+      <div class="blocoDois" data-df="dois">
+        <h2>Bloco Dois</h2>
+        <h3 data-dh>10rem</h3>
+        <h4 data-hf="dois"></h4>
+        <p>Integer blandit nunc a sapien hendrerit, quis imperdiet augue congue. Etiam nibh quam, lobortis id
+          eros eget, aliquet malesuada elit. Vivamus rutrum at turpis eu placerat. Phasellus a augue non sem
+          ultrices laoreet vel sed sem. Duis blandit dapibus feugiat. Ut ultricies eu elit ut bibendum. Donec
+          at neque sit amet libero condimentum gravida. Etiam ac est eget sem venenatis cursus eget at urna.
+          Nam lacinia faucibus nisi, ut pharetra nulla sodales vestibulum. Praesent at dapibus dolor. Donec
+          eleifend eu sapien vitae porttitor. Duis varius tincidunt augue a condimentum. Morbi erat est,
+          ultricies vel placerat ut, imperdiet sed massa. Ut tristique tempor arcu.</p>
+      </div>
+    </div>
+
+    <div class="blocoTres" data-df="tres">
+      <h2>Bloco Tres</h2>
+      <h3 data-dh>40rem</h3>
+      <h4 data-hf="tres"></h4>
+      <p>Etiam et pellentesque enim. Sed tristique lacus nisl, ut interdum est varius id. Donec porta nulla dolor,
+        vel
+        dictum enim ullamcorper in. Cras nibh lectus, aliquet non nunc non, laoreet suscipit lacus. Pellentesque
+        viverra ex nulla, vel egestas magna fermentum id. Vivamus rhoncus finibus nibh. Proin elementum bibendum
+        turpis ut bibendum. Nam rhoncus nulla a elit faucibus, ac euismod lectus imperdiet. Curabitur in felis
+        interdum, gravida dolor sed, tempus lectus. Maecenas ultrices lorem ac ante aliquet elementum. Proin
+        quis
+        odio vitae risus interdum viverra non ut tortor. Etiam ac lacus lacinia, fringilla erat vitae, bibendum
+        augue.</p>
+    </div>
+
+    <div class="blocoQuatro" data-df="quatro">
+      <h2>Bloco Quatro</h2>
+      <h3 data-dh>320px</h3>
+      <h4 data-hf="quatro"></h4>
+      <p>Nunc feugiat rhoncus turpis. Ut lectus risus, volutpat et arcu sit amet, imperdiet mattis augue. In et
+        interdum quam. Sed id efficitur turpis. Nullam quis dolor nec enim semper vulputate vel vel tortor. In
+        justo turpis, porta vitae risus eu, blandit suscipit turpis. Nullam ligula nisi, consectetur non
+        porttitor quis, tristique eget dolor. Ut cursus leo leo, euismod tincidunt massa interdum ultrices.
+        Aenean egestas vel nunc ut dapibus. Donec iaculis accumsan elit, sit amet bibendum nunc facilisis vitae.
+        Nunc sed cursus nibh. Vivamus et vehicula sem, quis convallis turpis.</p>
+    </div>
+
+    <div class="blocoCinco" data-df="cinco">
+      <h2>Bloco Cinco</h2>
+      <h3 data-dh>938px</h3>
+      <h4 data-hf="cinco"></h4>
+      <p>Curabitur ut imperdiet justo, ut ultrices nibh. Maecenas tempus, dolor efficitur egestas commodo, metus
+        lorem consequat justo, quis imperdiet quam sapien in erat. Donec finibus bibendum nibh. Nam ac lacinia
+        neque. Morbi malesuada malesuada augue vel dignissim. Donec posuere erat facilisis justo molestie
+        tincidunt. Donec et porttitor dolor, a elementum risus.</p>
+    </div>
+
+    <div class="blocoSeis" data-df="seis">
+      <h2>Bloco Seis</h2>
+      <h3 data-dh>80vw</h3>
+      <h4 data-hf="seis"></h4>
+      <p>Praesent sit amet dolor nec ex luctus tempor. Sed at placerat magna. Interdum et malesuada fames ac ante
+        ipsum primis in faucibus. Praesent rutrum est in sem rhoncus, quis ornare orci efficitur. Aliquam non
+        mollis ante. Nam lacinia efficitur sapien. Pellentesque eget lorem mi. Ut sed aliquet justo.</p>
+    </div>
+
+    <article>
+      <p>O Calculo do vw é feito sempre em cima do viewport na escala 1.0.</p>
+      <p></p>
+    </article>
+    </main>
+
+
+    <script>
+      function libera() {
+        document.querySelector("body").classList.toggle("corpo")
+      }
+
+
+      let el = document.querySelectorAll("[data-id]");
+      let img = document.querySelectorAll("[data-img]");
+      let h = document.querySelectorAll("[data-h]")
+
+      h[0].textContent = window.devicePixelRatio.toFixed(2);
+      h[1].textContent = window.visualViewport.width.toFixed(2);
+      h[2].textContent = window.visualViewport.scale.toFixed(2);
+
+      setTimeout(minhafuncao, 300);
+      setTimeout(pegaFonte, 200);
+
+      function minhafuncao() {
+        for (let i = 0; i < el.length; i++) {
+          el[i].textContent = img[i].clientWidth;
+
+        }
+
+      }
+
+      window.addEventListener('resize', () => {
+        h[1].textContent = window.visualViewport.width.toFixed(2);
+        for (let i = 0; i < el.length; i++) {
+          el[i].textContent = img[i].clientWidth;
+
+        }
+        pegaFonte();
+      });
+
+      let divs = document.querySelectorAll("[data-df]");
+      let hs = document.querySelectorAll("[data-hf]");
+      let hdivs = document.querySelectorAll("[data-dh]")
+
+      let quantidade = divs.length;
+
+      function pegaFonte() {
+
+        for (let i = 0; i < quantidade; i++) {
+          let width = window.getComputedStyle(divs[i], null).getPropertyValue('width')
+          let style = window.getComputedStyle(divs[i], null).getPropertyValue('font-size');
+          let fontSize = parseFloat(style);
+          let divSize = parseFloat(width);
+          hs[i].textContent = `tamanho da fonte é ${fontSize}px \n`;
+          hdivs[i].textContent = `tamanho da div é ${divSize}px \n`;
+        }
+
+      }
+
+      
+    </script>
+    </script>
+  </body>
+
+</html>

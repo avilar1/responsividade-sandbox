@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-imagens.css">
+  <title>Testes</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2>outras páginas:
+        <ul>
+          <li><a href="imagens.html">imagens</a></li>
+          <li><a href="objetos.html">objetos</a></li>
+          <li><a href="blocos.html">blocos</a></li>
+          <li><a href="textos.html">textos</a></li>
+          <li><a href="outros.html">outros</a></li>
+        </ul>
+      </h2>
+    </nav>
+  </header>
+  <main>
+    <h1>Testes de Imagem e Objetos</h1>
+
+    <h2>Imagens</h2>
+
+    <dl>Informações dispositivo atual quando a tela foi carregada:
+      <dt>Resolução do dispositivo:</dt>
+      <dd data-h="uno"></dd>
+      <dt>Width do viewport atual:</dt>
+      <dd data-h="dos"></dd>
+      <dt>Escala:</dt>
+      <dd data-h="tres"></dd>
+    </dl>
+    <!-- <p>imagem de alta resolução usando img:</p>
+    <img src="assets/imgs/alta-resolucao.jpg" alt=""> -->
+
+    <h3>logo carioca digital con método srcset</h3>
+    <div class="logos">
+      <img src="assets/imgs/logo_carioca_digital_1@3x.png" alt="" srcset="
+
+  assets/imgs/logo_carioca_digital_1@2x.png 2x,
+  assets/imgs/logo_carioca_digital_1@3x.png 4x,
+  assets/imgs/logo_carioca_digital_1.png 4x
+" sizes="(max-width: 480px) 180px,
+        (max-width: 990px) 700px,
+        100px
+           ">
+
+
+
+      <!--
+  3x -> operador do tamanho da imagem carregada?
+  sizes="(max-width: 480px) 256px,
+        (max-width: 990px) 512px,
+           768px" 
+  assets/imgs/logo_carioca_digital_1.png 1x
+  -->
+      </br>
+
+      <p> imagens </p>
+      <!-- <img src="assets/imgs/diferentes/a699px.jpg" alt="barco"
+srcset="
+assets/imgs/diferentes/a311px.jpg,
+assets/imgs/diferentes/a466px.jpg,
+assets/imgs/diferentes/a699px.jpg
+"
+sizes="(max-width: 480px) 50vw,
+        (max-width: 990px) 466px,
+           699px"
+> -->
+      <!-- 
+            assets/imgs/diferentes/small-ship.jpg 640px
+            assets/imgs/diferentes/medium-ship.jpg 1920px
+            assets/imgs/diferentes/large-ship.jpg 2400px
+            assets/imgs/diferentes/gigante-ship.jpg 38400px
+          -->
+      <!-- sizes="(max-width: 400px) 2400px,
+          (max-width: 990px) 1920px,
+          640px
+             " -->
+
+      </br>
+
+      <!-- <img src="assets/imgs/diferentes/b336pxMatterhorn.jpg" alt="" 
+srcset="
+assets/imgs/diferentes/b336pxMatterhorn.jpg,
+assets/imgs/diferentes/b336pxMatterhorn.jpg,
+assets/imgs/diferentes/b336pxMatterhorn.jpg
+"
+ sizes="
+ "> -->
+    </div>
+    </br>
+
+    <!-- <div class="novobloco">
+      <img src="assets/imgs/diferentes/g120.png" alt="teste" srcset="
+assets/imgs/diferentes/g120.png 1x,
+assets/imgs/diferentes/g300.png 2.5x,
+assets/imgs/diferentes/g500.png 4.16x
+" 
+        sizes="(max-width: 480px) 120px,
+        300px
+             ">
+    </div> -->
+
+    <img src="assets/imgs/diferentes/g120.png" data-img="img" alt="teste" srcset="
+assets/imgs/diferentes/g120.png 1x,
+assets/imgs/diferentes/g300.png 2.5x,
+assets/imgs/diferentes/g500.png 4.16x
+" sizes="(max-width: 600px) 120px,
+100vw">
+    <dt>tamanho da imagem em px é:</dt>
+    <dl data-id="img"></dl>
+
+
+
+    <div class="novobloco2">
+      <img src="assets/imgs/diferentes/b755pxMatterhorn.jpg" data-img="cidade" alt="teste" srcset="
+assets/imgs/diferentes/b336pxMatterhorn.jpg 336w,
+assets/imgs/diferentes/b503pxMatterhorn.jpg 503w,
+assets/imgs/diferentes/b755pxMatterhorn.jpg 755w
+" sizes="(max-width: 480px) 100vw,
+          (max-width: 990px) 50vw,
+        250px
+           ">
+
+      <dt>tamanho da imagem em px é:</dt>
+      <dl data-id="cidade"></dl>
+    </div>
+
+    <div class="novobloco3">
+      <img src="assets/imgs/diferentes/a311px.jpg" data-img="barco" alt="teste" srcset="
+assets/imgs/diferentes/a311px.jpg 1x,
+assets/imgs/diferentes/a466px.jpg 1.5x,
+assets/imgs/diferentes/a699px.jpg 2.25x
+" sizes="(max-width: 480px) 100vw,
+        (max-width: 700px) 80vw,
+        311px">
+    </div>
+    <dt>tamanho da imagem em px é:</dt>
+    <dl data-id="barco"></dl>
+
+    <!-- <div class="novobloco4">
+      
+      <img src="assets/imgs/diferentes/g120.png" alt="teste" srcset="
+assets/imgs/diferentes/g120.png 1x,
+assets/imgs/diferentes/g300.png 2.5x,
+assets/imgs/diferentes/g500.png 4.6x
+"
+        style="max-width: 120px; min-width: 120px;" 
+        sizes="(max-width: 480px) 100vw, 120px">
+    </div> -->
+
+    <article>
+      <h3>Conclusão:</h3>
+      <p>Observa-se que o comportamento do atributo src não é controlável, pois quem toma as decisões (sendo ela a
+        mlehor ou não) é o navegador, e isso está na especificação</p>
+      <p>Para tornar controlável a imagem, o melhor caminho a ser seguido é usar piscture, ou usar style definido os
+        atributos de width especificamente</p>
+      <p>De toda forma, usando srcset, quem escolherá o resultado final é o browser</p>
+      <p>Para ficar mais claro: existem diversas variáveis que levam a essa escolha e o que o srcset faz é resumir a
+        variáveis que o browser não sabe e ajudariam na escolha (como o tamanho real da imagem ou a densidade no qual
+        deve ser carregada a imagem)</p>
+      <p>O size define o target de dimensões da imagem a ser exibida. A partir dai o browser escolhe um candidato dentro
+        do srcset disponível i.e, a imagem de dimensão mais próxima do target</p>
+      <p>O Sizes é responsivo, entretanto. Se redimensiona o viewport, e há outra regra definida no media querie, um
+        novo target será definido, e portanto outro candidato poderá ser escolhido.</p>
+      <p>Na escolha de candidato, quando utilizado a dimensão w de pixel no srcset, o candidato nunca será menor que o
+        target, i.e, nunca será esticado, sempre será pego o candidato maior ou igual ao target</p>
+      <p>O cache impacta no candidato escolhido no Chrome, por isso o resize escolhe o maior candidato já carregado,
+        i.e, o que tem maior densidade de pixel (buscando a melhor qualidade).</p>
+      <p>Ao exibir o candidato escolhido, o browser leva em conta a dimensão informada no srcset e aplica o
+        multiplicador necessário para a exibição resultante ficar equivalente a dimensão do target. Assim, se a imagem
+        candidata tiver definida como 500w no srcset e o target for 1500, a imagem será exibida multiplicada por 3x
+        (1500/500), qualquer que seja a dimensão intriseca da imagem. Portanto, se o candidato escolhido for informado
+        como 500w mas tiver 300px de dimensão intríseca, a imagem será exibida com 300 x 3 = 900px</p>
+      <p>alguns artigos interessantes:</p>
+      <ul>
+        <li><a href="https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/">Um guia para a sintaxe de
+            imagens responsivas em HTML (em inglês)</a></li>
+        <li><a href="https://observablehq.com/@eeeps/w-descriptors-and-sizes-under-the-hood">w descriptors and sizes:
+            Under the hood (em inglês)</a></li>
+        <li><a href="https://desenvolvimentoparaweb.com/css/imagens-responsivas-srcset-sizes/"> Imagens responsivas com
+            srcset e sizes (em português)</a></li>
+        <li><a href="https://html.spec.whatwg.org/multipage/images.html#source-size-value"> Especificação html
+            (inglês)</a></li>
+        <li><a
+            href="https://www.w3.org/TR/2017/REC-html52-20171214/semantics-embedded-content.html#ref-for-image-source%E2%91%A0">
+            w3.org especificação (em inglês)</a></li>
+      </ul>
+
+
+
+
+    </article>
+    <!--
+<picture>
+    <source media="(max-width:438px)" srcset="assets/imgs/logo_carioca_digital_1.jpg">
+    <source media="(max-width:780px)" srcset="assets/imgs/logo_carioca_digital_1@2x.jpg">
+    <source media="(min-width:780px)" srcset="assets/imgs/logo_carioca_digital_1@3x.jpg ">
+    <img src="assets/imgs/logo_carioca_digital_1.jpg" alt="carioca-digital" style="max-width: 194px;">
+  </picture>
+-->
+
+
+    <!--
+<h3>imagem alterada com sized</h3>
+    <img src="assets/imgs/old-ship-grande.jpg" alt=""  
+    srcset="assets/imgs/old-ship-grande.jpg 2048w"
+            
+    sizes="(max-width: 480px) 80vw,
+           (max-width: 990px) 512px,
+           768px">
+
+<h3>imagem alterada usando picture</h3>
+
+        <picture>
+            <source media="(max-width:438px)" srcset="">
+            <source media="(max-width:780px)" srcset="assets/imgs/ship-pequeno.jpg">
+            <source media="(min-width:780px)" srcset="assets/imgs/outro-barco-grande.jpg">
+            <img src="assets/imgs/ship-medio.jpg" alt="barco" style="max-width: 954px;">
+          </picture>
+
+<h3>usando srcset</h3>
+
+<img alt="my awesome image"
+  src="assets/imgs/pequeno-barco.png"
+  srcset="assets/imgs/pequeno-barco.png 1x, assets/imgs/pequeno-barco-segundo.jpg 2x, assets/imgs/pequeno-barco-terceiro.jpg 3x">
+
+<h3>Colocando uma imagem e manipulando seus atributos com CSS</h3>
+<h4>imagem grande</h4>
+<img src="assets/imgs/pirate-ship.jpg" alt="navio pirata" class="pirata">
+<h4>imagem pequena</h4>
+<img src="assets/imgs/pequeno-barco.png" class="pirata" alt="">
+
+<h3>Atribuição de "-webkit-image-set"</h3>
+
+<div class="navio"></div>
+    -->
+  </main>
+  <script>
+    let el = document.querySelectorAll("[data-id]");
+    let img = document.querySelectorAll("[data-img]");
+    let h = document.querySelectorAll("[data-h]")
+
+    h[0].textContent = window.devicePixelRatio.toFixed(2);
+    h[1].textContent = window.visualViewport.width.toFixed(2);
+    h[2].textContent = window.visualViewport.scale.toFixed(2);
+
+    setTimeout(minhafuncao, 300)
+
+
+    function minhafuncao() {
+      for (let i = 0; i < el.length; i++) {
+        el[i].textContent = img[i].clientWidth;
+
+      }
+
+    }
+
+    window.addEventListener('resize', () => {
+      h[1].textContent = window.visualViewport.width.toFixed(2);
+      for (let i = 0; i < el.length; i++) {
+        el[i].textContent = img[i].clientWidth;
+
+      }
+    });
+  </script>
+</body>
+
+</html>

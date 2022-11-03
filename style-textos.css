@@ -1,0 +1,100 @@
+:root {
+    font-size: 3.5vw;
+}
+
+dt, dl, dd {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+dd{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.corpo::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    background-color: #F5F5F5;
+  padding: 0 15px;
+}
+
+
+
+h2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+h4 {
+    margin-bottom: .5rem;
+}
+
+/*bloco pai do blocoDois*/
+.pai {
+    font-size: 2vw;
+}
+
+.blocoUm {
+    background-color: aquamarine;
+    width: 10rem;
+}
+
+.blocoDois {
+    background-color: cadetblue;
+    width: 40em;
+    font-size: 1.1em;
+}
+
+.blocoTres {
+    background-color: lightpink;
+    width: 100%;
+  
+
+}
+.blocoQuatro {
+    width: 320px ;
+    background-color: chocolate;
+    font-size: 12px;
+}
+
+.blocoCinco{
+    
+    padding: 0 20px;
+    background-color: darkkhaki;
+}
+
+.blocoSeis{
+    width: 40vw;
+    background-color: greenyellow;
+}
+
+#ativado {
+    padding: .5em;
+    margin: .7rem;
+    background-color: blue;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+#ativado:hover, #ativado:active {
+    background-color: navy;
+    transition: .5s;
+    padding: .8em;
+}
+
+#ativado:not(hover) {
+    transition: .5s;
+    background-color: blue;
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    font-size: 16px;
+  }
+}

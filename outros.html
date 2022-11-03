@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo</title>
+    <link rel="stylesheet" href="outros.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="imagens.html">imagens</a></li>
+                <li><a href="objetos.html">objetos</a></li>
+                <li><a href="blocos.html">blocos</a></li>
+                <li><a href="textos.html">textos</a></li>
+                <li><a href="outros.html">outros</a></li>
+            </ul>
+        </nav>
+        <div>
+        <img src="assets/imgs/novo-120.png"
+        width="120" height="120"
+        alt="novo logo" 
+        srcset="assets/imgs/novo-120.png 120w,
+        assets/imgs/novo-500.png 500w,
+        assets/imgs/novo-1080.png 1080w"
+        >
+        <h1>Anotações diversas</h1>
+    </div>
+    </header>
+
+    <main>
+<aside>
+    <ul>
+        <li><a href="#responsivo">Responsividade Geral</a></li>
+        <li><a href="#ImagensFluidas">Imagens fluidas</a></li>
+        <li><a href="#embed">Embed</a></li>
+        <li>item 4</li>
+    </ul>
+</aside>
+<section>
+    <h2 id="anotc">Anotações diversas</h2>
+    <button onclick="mudar()">abrir modal</button>
+<article>
+    <h3 id="responsivo">Fórmula para font-size responsivo</h3>
+    <p>Para uso de fontes fluidas que respondem ao tapanho. A fórmula é a seguinte (a tag abaixo, propositalmente, não pula linha e respeita exatamente o que foi passado na tag, incluindo as linhas puladas):
+        <div>
+        <pre>html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+          } </pre>
+        </div>
+    Mas ela pode ser simplificada para seguinte linha:
+    <div>
+    <pre>html {
+        font-size: min(max(1rem, 4vw), 22px);
+      }</pre>
+    </div>
+  Mais detalhes podem ser vistos no link <a href="https://css-tricks.com/simplified-fluid-typography/">typografia fluida</a>    
+</p>
+</article>
+
+<article>
+    <h3 id="ImagensFluidas">Anotações sobre imagem</h3>
+    <p>abaixo o logo usado nesse teste usando imagem fluida que foi transcrito no artigo de <a href="https://www.zachleat.com/web/fluid-images/">Zach Leat</a> discutindo sobre abordagem de imagem fluida.</p>
+    <p>Apesar de mostrarmos que o uso do srcset se sai bem para escolha da mesma imagem, fica a dúvida sobre o uso das imagens usadas de forma fluida</p>
+    <p>Como queremos que as imagens acompanhem a fluidez das telas até que chegue ao valor fixo em desktop, é importante discutimos essa questão</p>
+    <img src="assets/imgs/novo-500.png" 
+    width="50%" height="50%"
+    alt="" 
+    srcset="assets/imgs/novo-120.png 500w,
+            assets/imgs/novo-500.png 500w,
+            assets/imgs/novo-1080.png 1080w"
+        >
+        <p>No exemplo acima, temos apenas o uso de srcset livre, sem div, mas com width relativo (50%). Abaixo teremos o controle da imagem com uma div envolvendo, ainda usando srcset:</p>
+
+    <div class="controle">
+        <img src="assets/imgs/novo-500.png" 
+        width="100%" height="100%"
+        alt="" 
+        srcset="assets/imgs/novo-120.png 500w,
+                assets/imgs/novo-500.png 500w,
+                assets/imgs/novo-1080.png 1080w"
+            >
+    </div>
+            
+</article>
+
+<article>
+    <h3 id="embed">Sobre embed</h3>
+
+    <p>O mapa abaixo foi embedado seguindo os estilos propostos pelo site (mas com alterações) <a href="https://embedresponsively.com/">embed resposively</a></p>
+    <p>é exemplo de um embed, mas outros podem seguir mesma lógica. A ideia é ser responsivo até determinado ponto e, dpeois, segue tamanho fixo</p>
+
+    <div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2598.6494422359965!2d-43.205156659432085!3d-22.91170047893802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x999b0655555555%3A0x1e1ff0aea58e7223!2sCentro%20Administrativo%20S%C3%A3o%20Sebasti%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1667311208967!5m2!1spt-BR!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></div>
+
+</article>
+
+
+
+</section>
+<div class="modal modal-controle">
+    <div class="modal-conteudo">
+    <p> Exemplo modal</p>
+    <img src="assets/imgs/ok.gif" alt="garoto fazendo joinha com as mãos">
+    <button onclick="mudar()">fechar</button>
+</div>
+</div>
+    </main>
+<script>
+    let modal = document.querySelector(".modal");
+    function mudar() {
+        modal.classList.toggle("modal-controle")
+    }
+</script>
+
+</body>
+</html>

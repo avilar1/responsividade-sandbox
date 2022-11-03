@@ -1,0 +1,144 @@
+/* 
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 1vw;
+    }
+} */
+
+
+body {
+    margin: 0;
+}
+
+ /*Largura da barra de rolagem*/ 
+ ::-webkit-scrollbar {
+    width: 0px;
+} 
+
+.caixa {
+    height: 200px;
+    margin: 0;
+}
+
+h3 {
+    display: inline-block;
+}
+
+.divpx {
+    width: ;
+    background-color: aqua;
+}
+
+.divvw{
+    width: 2780px;
+    background-color: red
+}
+
+.articlevw{
+    width: 100vw;
+    background-color: blue
+}
+
+.sectionvw{
+    width: 100vw;
+    background-color: purple
+}
+
+
+.asidevw {
+    width: 30vw;
+    display: inline-block;
+    background-color: yellow
+}
+.divaside {
+    width: 70vw;
+    display: inline-block;
+    background-color: green
+}
+
+.divpercentual {
+    width: 100%;
+    background-color: orange
+}
+
+.divpadrao{
+    width: 320px;
+    background-color: pink
+}
+
+.asidepercentual{
+    width: 30%;
+    display: inline-block;
+    background-color: coral
+}
+
+.divasidepercentual{
+    width: 70%;
+    display: inline-block;
+    background-color: fuchsia
+}
+
+.div2 {
+    background-color: darkgreen;
+    width: 20em;
+}
+
+.div3 {
+    background-color: bisque;
+    width: 20rem;
+}
+.div4 {
+    background-color: darkred;
+    width: 20vmax;
+}
+.div5 {
+    background-color: khaki;
+    width: 20vmin;
+}
+.div6 {
+    background-color: mediumseagreen;
+    width: fit-content;
+}
+
+.div7{
+    background-color: chocolate;
+    width: max-content;
+}
+
+.div8 {
+    background-color: gold;
+    width: min-content;
+}
+
+.div9 {
+    background-color: blueviolet;
+    position: relative;
+    width: 10vw;
+}
+
+.div10 {
+    background-color: crimson;
+    position: absolute;
+    opacity: .5;
+    z-index: 20;
+    width: 20vw;
+    right: 0;
+    height: 150px;
+}
+
+.div11 {
+    background-color: lime;
+    position: relative;
+    width: 30vw;
+}
+
+.tio {
+    width: 50vw;
+    position: relative;
+}

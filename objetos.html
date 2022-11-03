@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-objetos.css">
+  <title>Testes de objeto</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2>outras páginas:
+        <ul>
+          <li><a href="imagens.html">imagens</a></li>
+          <li><a href="objetos.html">objetos</a></li>
+          <li><a href="blocos.html">blocos</a></li>
+          <li><a href="textos.html">textos</a></li>
+          <li><a href="outros.html">outros</a></li>
+        </ul>
+      </h2>
+    </nav>
+  </header>
+  <main>
+    <h2>Testes com objetos</h2>
+
+    <h3>Teste de iframe</h3>
+    <iframe src="https://www.youtube.com/embed/QAUzWtLMnU0" width="560" height="315" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <h3>Teste com objeto < object> com audio</h3>
+
+    <object data="assets/audio/Adoniran Barbosa - O trem das onze.mp3" type="audio/mpeg" class="audioUm" controls="true"
+      onload="this.contentDocument.querySelector('video').pause()"></object> </br>
+    <object data="assets/audio/Bon Jovi - Livin' On A Prayer.mp3" type="audio/mpeg" width="100%" height="200"
+      controls="false" onload="this.contentDocument.querySelector('video').pause()"></object>
+
+    <h3>Teste com objeto canvas</h3>
+    <canvas id="canvas" width="300" height="100"></canvas>
+    <script>
+      var canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = 'rgb(200, 0, 0)';
+      ctx.fillRect(10, 10, 50, 50);
+      ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+      ctx.fillRect(30, 30, 50, 50);
+    </script>
+
+
+
+  </main>
+</body>
+
+</html>
